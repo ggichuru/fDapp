@@ -1,3 +1,5 @@
+const {pk_a } = require("./config");
+
 require("@nomiclabs/hardhat-waffle");
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -25,6 +27,10 @@ module.exports = {
   networks: {
     hardhat: {
       chainId: 1337
+    },
+    kovan: {
+      url: "https://kovan.infura.io/v3/e7aec242b2414e9ebfb4a35bd1aca726",
+      accounts: ["61988ef92477b664098b15d42451c96d9e01a1355c4bda532193ead507808a0d"]
     }
   }
 };
